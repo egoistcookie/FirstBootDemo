@@ -1,4 +1,4 @@
-package com.lf;
+package com.lf.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
