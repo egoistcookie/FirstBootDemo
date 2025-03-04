@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <div id="app">
+        <h1>登录</h1>
+        <div v-if="error" style="color:red">{{ error }}</div>
+        <form @submit.prevent="login">
+            <div>
+                <label>用户名:</label>
+                <input type="text" v-model="username" required>
+            </div>
+            <div>
+                <label>密码:</label>
+                <input type="password" v-model="password" required>
+            </div>
+            <button type="submit">登录</button>
+        </form>
+    </div>
+    <script src="/js/login.js"></script>
+</body>
+</html>
